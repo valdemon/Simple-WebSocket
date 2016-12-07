@@ -14,7 +14,7 @@ io.on('connection', function (socket) {
         hello : 'world'
     });
 
-    socket.emit('bingo', {
+    socket.emit('news', {
         url : 'http://www.supremenewyork.com/shop/all/sweatshirts'
     });
 
