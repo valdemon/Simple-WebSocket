@@ -14,6 +14,10 @@ io.on('connection', function (socket) {
         hello : 'world'
     });
 
+    socket.emit('bingo', {
+        url : 'http://www.supremenewyork.com/shop/all/sweatshirts'
+    });
+
     socket.on('test', function (data) {
         io.emit('test response', {
             success  : true,
