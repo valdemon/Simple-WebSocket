@@ -2,8 +2,9 @@ var express = require('express'),
     app     = express(),
     var lambda = new aws.Lambda({
       region: 'us-east-2' //change to your region
-    });
-    http    = require('http').createServer(app),
+    }),
+    http    = require('http'),
+    server    = http.createServer(app),
     io      = require('socket.io')(http);
 
 const url = "http://www.supremenewyork.com/shop/all/sweatshirts";
