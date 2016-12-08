@@ -16,7 +16,7 @@
 
             function sendTest () {
                 socket.emit('test', {
-                    foo : 'bar'
+                    url : document.getElementById("url").value;
                 });
             }
         </script>
@@ -24,6 +24,7 @@
     </head>
     <body>
         <div>Check Console</div>
+        <input type="text" id="url" name="url" value="http://www.supremenewyork.com/shop/all/sweatshirts">
         <button onClick="sendTest()">Send Test</button>
     </body>
 </html>
